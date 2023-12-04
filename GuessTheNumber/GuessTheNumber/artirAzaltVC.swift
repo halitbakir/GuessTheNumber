@@ -37,14 +37,14 @@ class artirAzaltVC: UIViewController {
                         artirAzaltLabel.text = "Azalt"
                     } else {
                         artirAzaltLabel.text = "KAZANDIN!"
-                        kalanHak = 0 // Doğru tahmin edildiği için kalan hakları sıfırla
+                        kalanHak = 0 
                         emojiImage.image = UIImage(named: "basarili.png")
                     }
                 } else {
                     artirAzaltLabel.text = "Geçersiz giriş. Lütfen bir sayı girin."
                 }
                 
-                kalanHak -= 1 // Her tahminde bir hak düşür
+                kalanHak -= 1 
                 guncelleHakLabel()
                 
                 if kalanHak == 0 {
@@ -53,7 +53,7 @@ class artirAzaltVC: UIViewController {
                 }
             }
             
-            tahminGir.text = "" // Tahmin sonrası giriş alanını temizleyelim
+            tahminGir.text = "" 
         }
 
         func guncelleHakLabel() {
